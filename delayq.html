@@ -37,7 +37,7 @@
 		<button class = "btn" onclick="makeNewDiv()">Add Value</button>
         <input class="btn" type="button" value="Get" onclick="get()">
 	    <input class = "btn" type="button" value="Delay" onclick = "delay()">
-        <!-- <input class = "btn" type="button" value="Promote" onclick = "promote()"> -->
+        <input class = "btn" type="button" value="Promote" onclick = "promote()">
 
 	
 <script>
@@ -84,14 +84,14 @@
 			}
 	}
 
-    // function promote()
-    // {
-    //         let queueItems = document.getElementsByClassName("delayQ")
-    //         let length_elements = queueItems.length
-    //         let num = Math.floor(Math.random()* length_elements)
-    //         let randNum = queueItems[num]
-	// 		randNum.parentNode.insertBefore(randNum,randNum.parentNode.firstChild)  
-    // }
+    function promote()
+    {
+            let queueItems = document.getElementsByClassName("delayQ")
+            let length_elements = queueItems.length
+            let num = Math.floor(Math.random()* length_elements)
+            let randNum = queueItems[num]
+			randNum.parentNode.insertBefore(randNum,randNum.parentNode.firstChild)  
+    }
 
 </script>
 </body>
